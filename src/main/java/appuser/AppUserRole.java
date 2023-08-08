@@ -1,6 +1,6 @@
 package appuser;
 
-public enum AppUseRole {
+public enum AppUserRole {
     USER,
     ADMIN
 }
