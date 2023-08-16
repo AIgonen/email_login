@@ -29,11 +29,13 @@ public class AppUser implements UserDetails {
             strategy = GenerationType.SEQUENCE,
             generator = "student_sequance"
     )
+
     private Long id;
     private String name;
     private String userName;
     private String email;
     private String password;
+    @Enumerated(EnumType.STRING)
     private  AppUserRole appUserRole;
     private boolean locked;
     private boolean enabled;
